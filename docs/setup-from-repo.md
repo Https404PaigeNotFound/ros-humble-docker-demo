@@ -1,24 +1,5 @@
 # Set Up Docker Container for ROS 2 Humble in Windows 11 from this repo
 
-# Using This Repository
-
-## 🧪 Requirements
-
-- Docker Desktop (WSL2 backend)
-- VS Code with Dev Containers extension
-
-## 🚀 Steps
-
-### Clone this repo:
-```bash
-git clone https://github.com/yourusername/ros-humble-docker-demo.git
-cd ros-humble-docker-demo
-```
-
-
-
-# Set Up Docker Container for ROS 2 Humble in Windows 11 from this repo
-
 ---
 
 ## 🧪 Requirements
@@ -53,9 +34,10 @@ In the WSL terminal, change directory to where you'd like to clone this repo.
 
 ### 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/ros-humble-docker-demo.git
+git clone https://github.com/Https404PaigeNotFound/ros-humble-docker-demo.git
 cd ros-humble-docker-demo
 ```
+
 
 ### 2. Open the project in VS Code
 ```bash
@@ -112,4 +94,3 @@ rqt_graph
 ---
 
 This project is now reproducible, sharable, and ready for development or demonstration on any machine with Docker and VS Code.
-
