@@ -1,6 +1,6 @@
-# ROS 2 Humble Simulation Environment (Leo Rover + Docker)
+# ROS 2 Humble Simulation Environment (Leo Rover + Docker) for Windows 11/10
 
-This repository sets up a complete ROS 2 Humble workspace with simulation, RViz, Gazebo, and Leo Rover integration — all inside a reproducible Docker + VS Code Dev Container environment.
+This repository sets up a complete ROS 2 Humble workspace with simulation, RViz, Gazebo, and Leo Rover integration — all inside a reproducible Docker + VS Code Dev Container environment. This is aimed for Windows 11/10 users to use WSL.
 
 ---
 
