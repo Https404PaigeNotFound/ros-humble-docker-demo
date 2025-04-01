@@ -46,12 +46,14 @@ code .
 
 ### 3. Reopen in Dev Container
 - Press `Ctrl+Shift+P`
-- Select: `Dev Containers: Reopen in Container`
+- Select: `Dev Containers: Rebuild and Reopen in Container`
 - VS Code will build and open the Docker container using the `.devcontainer/` setup
+> You should now see a terminal prompt like `root@...:/ros2_ws#`.
 
 ### 4. Run the setup script inside the container
 ```bash
 cd ros2_ws
+chmod +x setup.sh
 ./setup.sh
 source install/setup.bash
 ```
