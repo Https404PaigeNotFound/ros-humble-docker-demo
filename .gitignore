@@ -1,0 +1,72 @@
+# ROS 2 build files
+/ros2_ws/build/
+/ros2_ws/install/
+/ros2_ws/log/
+/ros2_ws/colcon.log
+
+# Ignore external cloned repos (Leo Rover)
+/ros2_ws/src/leo_simulator-ros2/
+/ros2_ws/src/leo_common-ros2/
+
+
+# ROS 2 logs and debugging files
+*.log
+*.bag
+*.db3
+
+# Python cache files
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+
+# VS Code settings and temporary files
+.vscode/
+.vscode/settings.json~
+.vscode/tasks.json~
+.devcontainer/devcontainer.json~
+
+# Docker-related files
+docker-compose.yml
+Dockerfile~
+*.tar.gz
+*.env
+.env.*
+.env.bak
+
+# WSL-specific files
+.wslconfig
+/mnt/wsl/
+
+# Windows system files (from WSL)
+Thumbs.db
+Desktop.ini
+
+# RViz runtime configurations 
+*.rviz
+
+# Symbolic links created during builds
+ros2_ws/src/*.symlink
+
+# Temporary files and lock files
+*.lock
+*.pid
+*.sock
+
+# Python virtual environments (if used)
+venv/
+.venv/
+
+# IDE-specific settings (optional)
+.idea/
+.idea/workspace.xml
+
+# Editor/system backup files
+*~
+*.bak
+.DS_Store
+
+
+
