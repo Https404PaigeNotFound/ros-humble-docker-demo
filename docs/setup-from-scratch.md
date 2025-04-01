@@ -315,12 +315,17 @@ ros2_docker_ws/
    - You’ll find a well-configured `.gitignore` in this repo to copy
    - Note that we ignore repos that we've not edited like the `leo_common-ros2` and `leo_simulator-ros2`. We'll install them using the `setup.sh` script
 
-3. **Freeze Python Dependencies**
+3. **Capture Python Dependencies**
    - Inside the Docker container, run:
      ```bash
-     pip freeze > requirements.txt
+     pip freeze | grep -E 'ament|mypy|flake8|black|PyGithub|your_packages' > requirements.txt
      ```
-   - This ensures all pip-installed Python packages are reproducible on other machines
+> ⚠️ **Important Note**: `pip freeze` captures **every installed Python package**, including those installed system-wide by ROS 2 and via `apt`. This can cause version conflicts, bloat, and broken builds.
+>
+> ✅ For this guide, we're using a **filtered freeze** to capture only explicitly installed pip tools and packages, as a practical solution.
+>
+> 🔄 This setup is planned to be updated with **Python virtual environment (********`venv`********) support**, which offers even cleaner isolation and reproducibility.
+  - This will ensure your `requirements.txt` includes only what’s necessary for development and tooling — not the entire ROS 2 system Python layer.
 
 4. **Write a `setup.sh` Script**
    - Automates:
