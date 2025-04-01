@@ -337,7 +337,7 @@ ros2_docker_ws/
 
 6. **Commit and Push to GitHub**
    ```bash
-   git init
+   git init -b main
    git remote add origin https://github.com/yourusername/leo-rover-docker-ws.git
    git add .
    git commit -m "Initial commit: ROS 2 Humble Leo Rover workspace"
